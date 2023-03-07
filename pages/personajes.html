@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghibli Studios</title>
+    <link rel="icon" href="../assets/img/conejo_polvo.png" type="image/png">
+    <!-- IMPORTACIÓN BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    crossorigin="anonymous">
+    <!-- IMPORTACIÓN CSS -->
+    <link rel="stylesheet" href="../assets/css/styles2.css">
+    <!-- IMPORTACION GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container me-0 ms-0 ps-0 pe-0" id="grilla">
+        <div id="logo">
+            <img class="navbar-brand ms-3 icono slide-in-left" src="../assets/img/totoro_icon.png" alt="Icono mi vecino totoro"/>
+        </div>
+        <nav class="bgNavBar d-flex align-items-center justify-content-between" id="navBar">
+            <div class="links d-flex justify-content-evenly align-items-start ms-4 gap-3">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              <a class="nav-link" href="./peliculasPrincipales.html">Películas principales</a>
+              <a class="nav-link" href="./personajes.html">Personajes principales</a>
+              <a class="nav-link" href="./ghibliPark.html">Ghibli Park</a>
+              <a class="nav-link" href="./hayaoMiyazaki.html">Hayao Miyazaki</a>
+            </div>
+            <div class="images d-flex me-5">
+                <img class="icono slide-in-right" src="../assets/img/kodamas.png" alt="Kodamas"/>
+                <img class="icono slide-in-right" src="../assets/img/kodamas.png" alt="Kodamas"/>
+            </div>
+        </nav>
+        <header class="text-center">
+            <h1 class="pb-4 mb-0">Ghibli Studios   スタジオジブリ</h1>
+        </header>
+        <main class="d-flex justify-content-center align-items-center mt-5">
+            <div class="accordion text-center ms-4 mt-2" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Totoro
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show text-dark position-relative bg-light" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+
+                    <div class="accordion-body d-flex align-items-center">
+                        <p>Los Totoro (トトロ?) son tres espíritus del bosque que habitan en el interior de un gigantesco árbol milenario, más específicamente, en un alcanforero.
+                        <strong>Totoro</strong> (大トトロ Dai-Totoro?): El de mayor tamaño, de color gris y el más conocido de los tres.
+                        <strong>mediano</strong> (中トトロ Chū-Totoro?): De color azul.
+                        <strong>pequeño Totoro</strong> (小トトロ Chibi-Totoro?): De color blanco, similar a un roedor.</p>
+                        <img src="../assets/img/totoro.png" alt="totoro"  class="personajes"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Ponyo
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse text-dark bg-light position-relative" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex align-items-center ">
+                        <p>La historia se centra en una criatura marina similar a un pez dorado llamada <strong>Ponyo</strong> , quien conoce y traba amistad con un niño de cinco años, Sōsuke, y desea convertirse en niña.Originalmente llamada Brunilda, es la hija de Fujimoto y Granmamare. De espíritu vivaz e ingenioso, luego de conocer a Sōsuke desea convertirse en humana y así poder estar con él.</p>
+                        <img src="../assets/img/ponyo.png" alt="ponyo"  class="personajes"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Chihiro
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse text-dark bg-light position-relative" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex align-items-center">
+                        <p><strong>Chihiro Ogino</strong> (荻野千尋, Ogino Chihiro), también conocida como Sen (Sen, literalmente "mil"), es la protagonista principal de la película de animación japonesa El viaje de Chihiro.Durante su aventura en el mundo de los espíritus, Chihiro madura de una chica con una personalidad como un niño, a un trabajador, responsable y valiente, que ha aprendido a poner sus miedos a un lado por aquellos que le importan.</p>
+                        <img src="../assets/img/chihiro.png" alt="chihiro"  class="personajes"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Sin Cara
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse text-dark bg-light position-relative" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                      <div class="accordion-body d-flex align-items-center">
+                          <p><strong>Sin Cara </strong>(カ オ ナ シ Kaonashi, "Sin Cara") es un espíritu de la película '' El viaje de chihiro'', es un amigo de Chihiro, tiene la capacidad de crear, y de asimilar determinadas características (como la voz, las extremidades, y hasta el pelo) de lo que ingiere.</p>
+                          <img src="../assets/img/si_cara.png" alt="sin cara"  class="personajes"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFifth">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifth" aria-expanded="false" aria-controls="collapseFifth">
+                        Gatobús
+                      </button>
+                    </h2>
+                    <div id="collapseFifth" class="accordion-collapse collapse text-dark bg-light position-relative" aria-labelledby="headingFifth" data-bs-parent="#accordionExample">
+                      <div class="accordion-body d-flex align-items-center">
+                          <p><strong> Gatobús</strong> ( ネコバスNekobasu ) (mencionado en la película comoねこのバス, Neko no Basu ) es un personaje del Estudio Ghibli película Mi vecino Totoro , dirigida por Hayao Miyazaki . Es una criatura grande, representado como un grinning, doce gato patas con un cuerpo hueco que sirve como un bus , con ventanas y asientos recubiertos con la piel, y una cola grande, espeso. La popularidad del personaje ha llevado a su uso en una película spin-off, juguetes para niños, un coche de arte , y ser presentado en el Museo Ghibli , entre otros productos e influencias.</p>
+
+                          <img src="../assets/img/gatobus.png" alt="gatobus"  class="personajes"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSixth">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixth" aria-expanded="false" aria-controls="collapseSixth">
+                        Sosuke
+                      </button>
+                    </h2>
+                    <div id="collapseSixth" class="accordion-collapse collapse text-dark bg-light position-relative" aria-labelledby="headingSixth" data-bs-parent="#accordionExample">
+                      <div class="accordion-body d-flex align-items-center">
+                          <p>Un niño de cinco años de edad, hijo de Lisa y Kōichi. Asiste a la Escuela Primaria Himawari ("Himawari" es la palabra japonesa para girasol). Encontró y rescató a Ponyo cuando esta quedó atrapada en un frasco de vidrio e inicialmente creyó que era un pez.</p>
+                          <img src="../assets/img/Sosuke.png" alt="sosuke"  class="personajes"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeventh">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeventh" aria-expanded="false" aria-controls="collapseSeventh">
+                        Satsuki Kusakabe
+                      </button>
+                    </h2>
+                    <div id="collapseSeventh" class="accordion-collapse collapse text-dark bg-light position-relative" aria-labelledby="headingSeventh" data-bs-parent="#accordionExample">
+                      <div class="accordion-body d-flex align-items-center">
+                          <p><strong> Kusakabe </strong>(草壁 サツキ Kusakabe Satsuki?): Con once años de edad, es la hermana mayor de Mei, quien trata de cuidar de ella al mismo tiempo que intenta adaptarse a su nuevo entorno y asimila la enfermedad que sufre su madre; todo esto hace que empiece a madurar muy pronto.</p>
+                          <img src="../assets/img/Satsuki_Kusakabe.webp" alt="satsuki"  class="personajes"/>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </main>
+        <footer class="d-flex justify-content-center align-items-center">
+            <p>&copy; 2023 Katia Velasquez</p>
+            <img
+            src="https://i.seadn.io/gae/9UEaSbgWBnG3QxYuzQq7s5uY2b7AW4le9FIMX-rakzs18nZpC_U56DntJS9RElkRfqUygeKILl5eq5zLLhn5Wp_FtiJ_VBeLiC_X7dg?auto=format&w=1400&fr=1"
+            alt="Calcifer"
+            class="icono_footer bounce">
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
