@@ -179,11 +179,58 @@ h2{
 .bounce {
     animation: bounce 1s;
   }
+  .mobile{
+    display: none;
+  }
 
   /*********** MEDIA QUERYS ***********/
   @media (max-width: 576px){
     body{
         background-color: #D7DBDA;
     }
+    #logo{
+        display: none;
+    }
+    header{
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-top: 2rem;
+        position: relative;
+        font-size:small;
+    }
+    #grilla{
+        display: grid;
+        grid-template-columns:80px auto;
+        grid-template-rows: 1fr auto 1fr;
+        grid-template-areas:
+        'nav header'
+        'main main'
+        'footer footer'
+        ;
+    }
+    main {
+        background-image: none;
+      }
+      .images{
+        margin: 0;
+        margin-left: 5px;
+      }
+      .icono{
+        width: 35px;
+      }
+      .card{
+        display: none;
+      }
+      .mobile{
+        display: block;
+      }
+      footer{
+        background-color: #D7DBDA;
+        position:fixed;
+    }
+    .carousel-inner{
+        width:250px;
+    }
+
 
   }
