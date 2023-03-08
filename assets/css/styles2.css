@@ -19,9 +19,12 @@ main{
 footer{
     grid-area: footer;
     background-color: #D7DBDA;
-    position: absolute;
-    bottom: 0;
+    /* position: absolute; */
+    /* bottom: 0; */
     width: 100%;
+    position: fixed;
+    padding: 12px;
+    bottom: 0;
 
 }
 #grilla{
@@ -210,6 +213,7 @@ h2{
     }
     main {
         background-image: none;
+        min-height: 100vh;
       }
       .images{
         margin: 0;
@@ -226,7 +230,7 @@ h2{
       }
       footer{
         background-color: #D7DBDA;
-        position:fixed;
+        /* position:fixed; */
     }
     .carousel-inner{
         width:250px;
