@@ -1,0 +1,24 @@
+@import './var';
+.carousel{
+    // display: none;
+    .carousel-inner{
+        width: 400px;
+    }
+}
+.accordion{
+    width: 90%;
+    .personajes{
+        height: -webkit-fill-avalaible;
+    }
+}
+.accordion-button:not(.collapsed){
+    background-color:$main_color;
+    color:$accordion_text_color;
+}
+.card{
+    background-color: $main_color;
+    max-width: 1000px;
+    img{
+        border-radius: 10px;
+    }
+}

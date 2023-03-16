@@ -1,0 +1,8 @@
+@import './var';
+#logo{
+    grid-area: logo;
+    background-color: $main_color;
+    .icono{
+        width: 60px;
+    }
+}

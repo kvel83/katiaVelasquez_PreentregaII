@@ -1,0 +1,9 @@
+@import './var';
+
+header{
+    grid-area: header;
+    h1{
+        background-color: $main_color;
+        color: $text_color;
+    }
+}

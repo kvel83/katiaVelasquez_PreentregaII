@@ -1,0 +1,12 @@
+@import './var';
+footer{
+    grid-area: footer;
+    background-color: $main_color;
+    width: 100%;
+    position: fixed;
+    padding: 12px;
+    bottom: 0;
+    .bounce{
+        animation: bounce 1s;
+    }
+}

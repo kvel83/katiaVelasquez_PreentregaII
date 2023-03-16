@@ -1,0 +1,20 @@
+@import './var';
+
+#navBar{
+    grid-area: nav;
+    width: 96vw;
+    background-color: $main_color;
+
+    .nav-link{
+        border-radius: 20px;
+    }
+    .nav-link:hover{
+        background-color: $text_color;
+        color: $main_color;
+        border-radius: 20px;
+    }
+    .navbar-collapse{
+        z-index: 999;
+        margin-top: 10px;
+    }
+}

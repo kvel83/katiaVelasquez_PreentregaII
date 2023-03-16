@@ -1,0 +1,21 @@
+@import './var';
+.ghibliPark {
+    width: 33.3%;
+    background-color: #D7DBDA;
+    color: #D7DBDA;
+  }
+@for $i from 1 through 4 {
+  .foto#{$i} {
+    position: absolute;
+    // Cálculo de posición y rotación en función de $i
+    $left: if($i % 2 == 0, 75%, 7%);
+    $top: if(calc($i/2) <= 1, 25%, 65%);
+    $rotate: if($i % 2 == 0, -20deg, 20deg);
+    left: $left;
+    top: $top;
+    transform: rotate($rotate);
+    -ms-transform: rotate($rotate); /* IE 9 */
+    -webkit-transform: rotate($rotate); /* Opera, Chrome, and Safari */
+  }
+}
+
