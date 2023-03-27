@@ -1,6 +1,8 @@
 @import './var';
+.carrusel{
+    display: none!important;
+}
 .carousel{
-    // display: none;
     .carousel-inner{
         width: 400px;
     }

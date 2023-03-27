@@ -1,3 +1,7 @@
+.carrusel {
+  display: none !important;
+}
+
 .carousel .carousel-inner {
   width: 400px;
 }
@@ -26,9 +30,11 @@ footer {
   grid-area: footer;
   background-color: #D7DBDA;
   width: 100%;
-  position: fixed;
+  min-height: 10vh;
+  z-index: 1;
+  position: absolute;
+  top: 100%;
   padding: 12px;
-  bottom: 0;
 }
 footer .bounce {
   animation: bounce 1s;
@@ -110,26 +116,19 @@ header h1 {
   color: #0d3d6e;
 }
 
-main {
-  grid-area: main;
+body {
   background-image: url("../img/studio_ghibli.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  backdrop-filter: blur(10px);
+  min-height: 90vh;
+}
+
+main {
+  grid-area: main;
 }
 main .mobile {
   display: none;
-}
-main::before {
-  content: "";
-  position: absolute;
-  background: inherit;
-  top: 145px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-  filter: blur(10px);
 }
 main h2 {
   color: #0d3d6e;
@@ -139,9 +138,11 @@ footer {
   grid-area: footer;
   background-color: #D7DBDA;
   width: 100%;
-  position: fixed;
+  min-height: 10vh;
+  z-index: 1;
+  position: absolute;
+  top: 100%;
   padding: 12px;
-  bottom: 0;
 }
 footer .bounce {
   animation: bounce 1s;
@@ -170,26 +171,19 @@ header h1 {
   width: 60px;
 }
 
-main {
-  grid-area: main;
+body {
   background-image: url("../img/studio_ghibli.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  backdrop-filter: blur(10px);
+  min-height: 90vh;
+}
+
+main {
+  grid-area: main;
 }
 main .mobile {
   display: none;
-}
-main::before {
-  content: "";
-  position: absolute;
-  background: inherit;
-  top: 145px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-  filter: blur(10px);
 }
 main h2 {
   color: #0d3d6e;
@@ -221,6 +215,7 @@ main h2 {
 @media (max-width: 576px) {
   body {
     background-color: #D7DBDA;
+    background-image: none;
   }
   #logo {
     display: none;
@@ -241,6 +236,7 @@ main h2 {
   }
   #navBar {
     align-items: center;
+    width: 100vw;
   }
   #navBar .nav-link {
     border-radius: 20px;
@@ -256,13 +252,16 @@ main h2 {
     align-items: center;
   }
   #grilla {
+    grid-template-columns: 80px 1fr;
     grid-template-rows: 1fr auto 1fr;
     grid-template-areas: "nav header" "main main" "footer footer";
   }
   main {
-    background-image: none;
     min-height: 100vh;
     margin-top: 0px !important;
+    padding-top: 0px !important;
+    display: flex;
+    justify-content: center;
   }
   main .mobile {
     display: block;
@@ -276,20 +275,68 @@ main h2 {
   main .carrusel {
     display: flex !important;
   }
+  main .carousel {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+  }
   main .carousel .carrousel_inner {
     width: 250px;
   }
   main .ghibliPark {
-    width: 100%;
+    width: 90%;
   }
   main .responsiveCard {
     display: flex !important;
     justify-content: center;
     align-items: center;
-    margin-left: 5rem;
   }
   #accordionExample {
     margin-top: 0;
+  }
+  footer {
+    position: relative;
+    min-height: auto;
+  }
+}
+@media (max-width: 992px) {
+  #grilla {
+    display: grid;
+    grid-template-columns: 80px auto;
+    grid-template-rows: 1fr 1fr auto 1fr;
+    grid-template-areas: "logo header" "nav nav" "main main" "footer footer";
+  }
+  header {
+    padding-top: 1rem;
+    background-color: #D7DBDA;
+    width: 100%;
+  }
+  #navBar {
+    width: 100vw;
+    position: relative;
+  }
+  .card {
+    max-width: 90%;
+  }
+  .navbar-collapse {
+    grid-area: nav;
+  }
+  .ghibliPark {
+    width: 90%;
+  }
+  .info {
+    display: none !important;
+  }
+  .carrusel {
+    display: flex !important;
+  }
+  .carousel {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+  }
+  .carousel .carrousel_inner {
+    width: 250px;
   }
 }
 @keyframes slide-in-right {

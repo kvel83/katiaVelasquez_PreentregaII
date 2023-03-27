@@ -1,24 +1,44 @@
 @import './var';
-main{
-    grid-area: main;
+body{
     background-image: url("../img/studio_ghibli.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    // background-attachment: fixed;
+    backdrop-filter: blur(10px);
+    min-height: 90vh;
+    // &::before{
+        // content: '';
+        // position: absolute;
+        // background: inherit;
+        // height: 150%;
+        // top: 145px ;
+        // left: 0;
+        // right: 0;
+        // bottom: 0;
+        // box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+        // filter: blur(10px);
+    // }
+}
+main{
+    grid-area: main;
+    // background-image: url("../img/studio_ghibli.jpg");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
     .mobile{
         display: none;
     }
-    &::before{
-        content: '';
-        position: absolute;
-        background: inherit;
-        top: 145px ;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-        filter: blur(10px);
-    }
+    // &::before{
+        // content: '';
+        // position: absolute;
+        // background: inherit;
+        // top: 145px ;
+        // left: 0;
+        // right: 0;
+        // bottom: 0;
+        // box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+        // filter: blur(10px);
+    // }
     h2{
         color: $text_color;
     }
