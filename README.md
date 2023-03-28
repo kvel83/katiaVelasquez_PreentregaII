@@ -1,6 +1,8 @@
 ﻿# katiaVelasquez_PreentregaII
 
-Sitio informativo sobre Studio Ghibli para la segunda entrega del módulo de desarrollo web en CoderHouse.
+Sitio informativo sobre Studio Ghibli, estado terminado.
+
+Incluye vista de escritorio, tablets y celulares. Optimizado para Google Chrome.
 
 ## Tecnologías utilizadas
 
